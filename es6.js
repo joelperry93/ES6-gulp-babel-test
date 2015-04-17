@@ -1,13 +1,17 @@
 class Cat {
-    constructor() {
-        console.log('Hello!');
+    constructor(name) {
+        this.name = name;
     }
 
     sayHello() {
-        console.log('cunt');
+        console.log('I\'m ' + this.name);
     }
 }
 
-var cat = new Cat();
+require('./test');
 
-cat.sayHello();
+var cats = [new Cat("Tim"), new Cat("Dave"), new Cat("Peter"), new Cat("Milkshake")];
+
+cats.forEach(cat => {
+    cat.sayHello();
+}); 
