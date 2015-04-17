@@ -7,8 +7,10 @@ class Cat {
         console.log('I\'m ' + this.name);
     }
 }
-
-require('./test');
+ 
+var x = require('./test'); 
+ 
+console.log(x);
 
 var cats = [new Cat("Tim"), new Cat("Dave"), new Cat("Peter"), new Cat("Milkshake")];
 
